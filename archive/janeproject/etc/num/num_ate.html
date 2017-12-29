@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>数当てゲーム</title>
+
+<script language="JavaScript">
+<!--
+/*
+window.alert("○○が発生しました!!");
+pwd = window.prompt("パスワードを入力してください。", "");
+*/
+ran_num = Math.floor(Math.random() * 10);
+document.write(ran_num);
+	function Start()
+	{
+	num = document.select_num.NUM.value;
+		if(num >= 0 && num <= 9)
+		{
+			if(ran_num == num)alert("正解！！");
+			else if(ran_num < num)alert("もっと小さい数です");
+			else if(ran_num > num)alert("もっと大きい数です");
+			else alert("ERROR!");
+		}
+		else alert("ERROR!\n０～９の数を入力してください！");
+	}
+
+-->
+</script>
+</head>
+<body>
+<p>０～９までの数を入力してください。</p>
+<br>
+<form name="select_num">
+<input size="3" name="NUM" maxlength="3" >
+<input type="submit" value="送信する"onclick="Start()">
+<input type="reset" value="リセット">
+</form>
+<br>
+<br>
+<br><a href="./num_ate2.html">数当てゲームパート2はコチラ</a>
+<br>
+<br>
+<br><a href="./num_ate3.html">数当てゲームパート3はコチラ</a>
+<br>
+<br>
+
+</body>
+</html>

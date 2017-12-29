@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>数当てゲーム</title>
+
+<script language="JavaScript">
+<!--
+/*
+window.alert("○○が発生しました!!");
+pwd = window.prompt("パスワードを入力してください。", "");
+*/
+window.alert("JavaScriptのダイアログだけ使った\n数当てゲームです♪\n///////重要////////\nキャンセルで抜けることができます！\n///////////////////");
+hantei = false;
+ran_num = Math.floor(Math.random() * 10);
+window.alert("一般人レベル");
+while(1)
+{
+	num = window.prompt("０～９までの数を入力してください！", "");
+	if(num == null)break;
+	if(num >= 0 && num <= 9)
+	{
+		if(ran_num == num)
+		{
+		window.alert("正解！\n次のステージへ移ります！");
+		hantei = true;
+		break;
+		}
+		else if(ran_num > num)
+		{
+		window.alert("もっと大きい数です。");
+		}
+		else if(ran_num < num)
+		{
+		window.alert("もっと小さい数です。");
+		}
+	}
+	else window.alert("ERROR!\n０～９までの数を入力してください！！");
+}
+if(hantei == true)
+{
+	window.alert("運ゲーレベル");
+	ran_num = Math.floor(Math.random() * 100);
+	hantei = false;
+	while(1)
+	{
+	num = window.prompt("０～９９までの数を入力してください！", "");
+		if(num == null)break;
+		if(num >= 0 && num <= 99)
+		{
+			if(ran_num == num)
+			{
+			window.alert("正解！\n次のステージへ移ります！");
+			hantei = true;
+			break;
+			}
+			else if(ran_num > num)
+			{
+			window.alert("もっと大きい数です。");
+			}
+			else if(ran_num < num)
+			{
+			window.alert("もっと小さい数です。");
+			}
+		}
+		else window.alert("ERROR!\n０～９９までの数を入力してください！！");
+	}
+}
+if(hantei == true)
+{
+	window.alert("超人レベル");
+	ran_num = Math.floor(Math.random() * 1000);
+	hantei = false;
+	while(1)
+	{
+		num = window.prompt("０～９９９までの数を入力してください！", "");
+		if(num == null)break;
+		if(num >= 0 && num <= 999)
+		{
+			if(ran_num == num)
+			{
+			window.alert("正解！");
+			hantei = true;
+			break;
+			}
+			else if(ran_num > num)
+			{
+			window.alert("もっと大きい数です。");
+			}
+			else if(ran_num < num)
+			{
+			window.alert("もっと小さい数です。");
+			}
+			else if(num == null)break;
+		}
+		else window.alert("ERROR!\n０～９９９までの数を入力してください！！");
+	}	
+}
+if(hantei == true)
+{
+window.alert("あなたはすごい！");
+}
+
+-->
+</script>
+</head>
+<body>
+<br>ブラウザの戻るで戻ってください。
+</body>
+</html>

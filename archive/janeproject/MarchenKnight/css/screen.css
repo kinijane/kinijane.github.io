@@ -1,0 +1,113 @@
+body {
+		font:100% ＭＳ Ｐゴシック,Times New Roman;
+		color:#333;
+		margin-left: 90px;
+		padding:0;
+		text-align:left;
+		background:url(../pic/haikei.png) repeat-y black;
+	}
+	h1{
+		}
+	html,body{
+	height:100%;
+	}
+			
+	/* CSS定義ページ START */
+	#header{
+	font:150% Georgia;
+	font-weight:bold;
+	margin-left:150px;
+	}	
+	#page-center{
+	position:absolute;
+	margin-left:100px;
+   	text-align:center;
+  	height: 100%;
+	}
+	
+	#page-left{
+	text-align:left;
+	margin:40px 0px 40px 50px;
+	width:400px;
+	}
+	#page-left-bold{
+	text-align:left;
+	font:125% Georgia;
+	font-weight:bold;
+	}
+
+	.hooter{
+	font:120%;
+	font-weight:bolder;
+	color:#FF0000;
+	max-width:500px;
+	margin:50px 0px 0px;
+	}
+	.hooter.closs{
+	color:#333;	
+	margin:0px 0px 50px;
+	}
+	
+/* CSS定義ページ END */
+/* アニメーション用 */
+	.anim-bg {
+		position:absolute;
+		margin:70px 0px 0px 20px;
+		width: 480px;
+		height: 300px;
+		background: black;
+		z-index:1;
+	}
+	.anim-moji-left-white{
+		position:absolute;
+		margin:150px 0px 0px 50px;
+		font:150% ＭＳ Ｐゴシック,Times New Roman;
+		color:white;
+		text-align:left;
+		z-index:0;
+	}
+	.anim-moji-left-white2{
+		position:absolute;
+		margin:250px 0px 0px 70px;
+		font:150% ＭＳ Ｐゴシック,Times New Roman;
+		color:white;
+		text-align:left;
+		z-index:0;
+	}
+	.anim-pic{
+		position:absolute;
+		margin:70px 0px 0px 20px;
+		z-index:0;
+	}
+	
+	.fade_box {
+		position:absolute;
+		margin:70px 0px 0px 20px;
+		width: 480px;
+		height: 300px;
+		background: black;
+		z-index:0;
+	}
+	.next_btn{
+		position:absolute;	
+		margin:340px 0px 0px 470px;
+		z-index:2000;
+		cursor: pointer;
+	}
+	.anim-hooter{
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	font:120%;
+	font-weight:bolder;
+	color:#FF0000;
+	max-width:500px;
+	margin:50px 0px 40px;
+	}
+	.anim-hooter.closs{
+	margin:0px 0px 5px;
+	color:#333;
+	}
+
+
+

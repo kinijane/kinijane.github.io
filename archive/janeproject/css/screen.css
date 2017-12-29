@@ -1,0 +1,192 @@
+body {
+		font:100% ＭＳ Ｐゴシック,Times New Roman;
+		color:#333;
+		margin-left: 90px;
+		padding:0;
+		text-align:left;
+		background:url(../pic/haikei.png) repeat-y black;
+	}
+	h1{
+		font-size:180%;
+		font-weight:normal;
+		margin:0;
+		padding:0 20px;
+		}
+	h2{
+		font-size:160%;
+		font-weight:normal;
+		}	
+	h3{
+		font-size:140%;
+		font-weight:normal;
+		}
+
+	/* Accordion 定義ページ START */
+#Accordion{
+  	position:relative;
+	left:100px;
+	width:300px;
+}
+.archive{
+	background:#369;
+	color:#FFF;
+	padding:5px 10px;
+	border-bottom:1px solid #FFF;
+	cursor:pointer;	
+}
+.subMenu{
+	background-color:#9CF;	
+	padding:5px 10px;
+	border-bottom:1px solid #FFF;	
+}
+	/* Accordion 定義ページ END */
+			
+	/* CSS定義ページ START */
+	#header{
+	font:150% Georgia;
+	font-weight:bold;
+	margin-left:150px;
+	}	
+	#page-center{
+	position:absolute;
+	margin-left:100px;
+	height:200px;
+   	text-align:center;
+	}
+	
+	#page-left{
+	text-align:left;
+	margin:40px 0px 40px 50px;
+	width:400px;
+	}
+	#page-left-bold{
+	text-align:left;
+	font:125% Georgia;
+	font-weight:bold;
+	}
+
+	.hooter{
+	font:120%;
+	font-weight:bolder;
+	color:#FF0000;
+	max-width:500px;
+	margin:50px 0px 0px;
+	}
+	.hooter.closs{
+	color:#333;	
+	margin:0px 0px 50px;
+	}
+
+/* CSS定義ページ END */
+	img{border:none;}
+	pre{
+		display:block;
+		font:12px "Courier New", Courier, monospace;
+		padding:10px;
+		border:1px solid #bae2f0;
+		background:#e3f4f9;	
+		margin:.5em 0;
+		width:674px;
+		}	
+			
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            vertical-align:middle;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+			
+	#container{	
+		margin:0 auto;
+		position:relative;
+		text-align:left;
+		width:696px;
+		background:#fff;		
+		margin-bottom:2em;
+		}	
+			
+	#content{
+		position:relative;
+		}			
+
+/* Easy Slider */
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin-left:0;
+		padding-left:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:500px;
+		height:250px;
+		overflow:hidden; 
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:100px;
+		height:100px;
+		position:absolute;
+		left:0px;
+		top:71px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:450px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:50px;
+		height:50px;
+		background:url(../pic/leftyajirusi.png) no-repeat 0 0;
+		cursor: pointer;
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(../pic/rightyajiryusi.png) no-repeat 0 0;	
+		}	
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:1em 0;
+		padding:0;
+		height:28px;	
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+	ol#controls li a{
+		float:left;
+		height:28px;
+		line-height:28px;
+		border:1px solid #ccc;
+		background:#DAF3F8;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background:#5DC9E1;
+		color:#fff;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
+

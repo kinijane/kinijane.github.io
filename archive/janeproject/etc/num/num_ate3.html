@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>数当てゲーム</title>
+
+<script language="JavaScript">
+<!--
+/*
+window.alert("○○が発生しました!!");
+pwd = window.prompt("パスワードを入力してください。", "");
+*/
+window.alert("JavaScriptのダイアログだけ使った\n永久版数当てゲームです♪\n///////重要////////\nキャンセルで抜けることができます！\n///////////////////");
+window.alert("！！！注意！！！\nこの数当てゲームは永遠に続きます（笑）\nあなたの人生の時間を損ねる危険性がありますので、\n１０分程度でおやめください！\n！！！！！！！");
+win_num=1;
+hantei = true
+while(1)
+{
+	if(hantei == true)
+	{
+		ran_num = Math.floor(Math.random() * 10 * win_num);
+		hantei = false;
+		while(1)
+		{
+		num = window.prompt("0～"+ 10 * win_num +"までの数を入力してください！\nキャンセルで抜けることができます！", "");
+			if(num == null){hantei = false;break;}
+			if(num >= 0 && num <= 10 * win_num)
+			{
+				if(ran_num == num)
+				{
+				window.alert("正解！\n次のステージへ移ります！");
+				hantei = true;
+				win_num++;
+				break;
+				}
+				else if(ran_num > num)
+				{
+				window.alert("もっと大きい数です。");
+				}
+				else if(ran_num < num)
+				{
+				window.alert("もっと小さい数です。");
+				}
+			}
+			else window.alert("ERROR!\n0～"+ 10 * win_num +"までの数を入力してください！！");
+		}
+	}
+	else break;
+}
+win_num--;
+window.alert("あなたの当てた回数は　"+ win_num +"　回です！");
+-->
+</script>
+</head>
+<body>
+<br>ブラウザの戻るで戻ってください。
+</body>
+</html>
